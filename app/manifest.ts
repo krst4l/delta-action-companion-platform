@@ -3,9 +3,9 @@ import { MetadataRoute } from 'next';
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Next.js AI Starter',
-    short_name: 'Next App',
-    description: 'A starter template for Next.js with AI features',
+    name: '三角洲游戏陪玩平台',
+    short_name: '三角洲陪玩',
+    description: '专业游戏陪玩服务平台，提供王者荣耀、英雄联盟、和平精英等热门游戏陪玩服务',
     start_url: '/',
     display: 'standalone',
     background_color: '#FFFFFF',
@@ -29,7 +29,7 @@ export default function manifest(): MetadataRoute.Manifest {
       },
     ],
     orientation: 'portrait',
-    categories: ['productivity', 'utilities'],
+    categories: ['games', 'entertainment'],
     screenshots: [
       {
         src: '/screenshots/mobile.png',
@@ -44,12 +44,12 @@ export default function manifest(): MetadataRoute.Manifest {
     ],
     shortcuts: [
       {
-        name: 'Dashboard',
-        url: '/dashboard',
-        icons: [{ src: '/icons/dashboard.png', sizes: '96x96' }],
+        name: '游戏陪玩',
+        url: '/gamers',
+        icons: [{ src: '/icons/gamers.png', sizes: '96x96' }],
       },
       {
-        name: 'Profile',
+        name: '个人中心',
         url: '/profile',
         icons: [{ src: '/icons/profile.png', sizes: '96x96' }],
       },

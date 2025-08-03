@@ -1,109 +1,201 @@
 {
   "homePage": {
-    "title": "Next.js AI Starter",
-    "subtitle": "The Ultimate Modern Web Development Kit",
-    "description": "A production-ready Next.js template with AI integration, internationalization, dark mode, and cutting-edge UI components. Built for developers who want to ship fast.",
+    "title": "Delta Gaming Platform",
+    "subtitle": "Professional Gaming Companion Service",
+    "description": "Providing professional gaming companion services for popular games like Delta Force, Honor of Kings, League of Legends, and more. Professional companions, safe and reliable, making your gaming experience more exciting.",
     "getStarted": "Get Started",
-    "learnMore": "View on GitHub",
-    "openSource": "🎉 Open Source & Free",
+    "learnMore": "Learn More",
+    "openSource": "🎮 Professional Gaming",
+    "badge": "Official Licensed",
+    "hero": {
+      "title": "Delta Force",
+      "subtitle": "Professional Gaming Platform",
+      "description": "Gathering top Delta Force players, providing professional companion services\nMaking every game a wonderful experience"
+    },
+    "search": {
+      "placeholder": "Search professional companions...",
+      "button": "Search Now"
+    },
+    "quickNav": {
+      "online": "Online Companions",
+      "rated": "High-Rated Companions",
+      "female": "Female Companions"
+    },
+    "stats": {
+      "gamers": "1000+",
+      "gamersLabel": "Professional Companions",
+      "orders": "50000+",
+      "ordersLabel": "Service Orders",
+      "rating": "4.9★",
+      "ratingLabel": "Average Rating",
+      "satisfaction": "98%",
+      "satisfactionLabel": "Satisfaction Rate"
+    },
+    "features": {
+      "title": "Why Choose Us",
+      "description": "Professional companion team, thoughtful service experience, allowing you to be invincible on the Delta battlefield",
+      "certification": {
+        "title": "Professional Certification",
+        "description": "Strict screening, real-name verification\nEnsuring every companion is professional and reliable"
+      },
+      "skills": {
+        "title": "Skilled Expertise",
+        "description": "Specialized in various tactical skills\nHelping you quickly improve your gaming level"
+      },
+      "response": {
+        "title": "Quick Response",
+        "description": "24/7 online service\nMeeting your needs anytime, anywhere"
+      },
+      "guarantee": {
+        "title": "Service Guarantee",
+        "description": "Full refund if not satisfied\nLet you enjoy gaming without worries"
+      }
+    },
+    "featured": {
+      "title": "Star Companions",
+      "description": "Platform's top companions, bringing you ultimate gaming experience",
+      "viewAll": "View All",
+      "loading": "Loading featured companions...",
+      "browseAll": "Browse All Companions"
+    },
+    "gameFeatures": {
+      "title": "Delta Force · Professional Service",
+      "description": "Focused on Delta Force gaming companion platform, providing the most professional gaming guidance and companionship services",
+      "tactics": {
+        "title": "Tactical Guidance",
+        "description": "Professional coaches provide one-on-one guidance, teaching advanced tactics and skills, quickly improving your gaming level"
+      },
+      "teamwork": {
+        "title": "Team Coordination",
+        "description": "Form professional squads, learn team collaboration, experience the real joy of tactical coordination"
+      },
+      "ranking": {
+        "title": "Ranking Boost",
+        "description": "Professional boosting service, fast ranking, letting you easily reach your ideal rank"
+      },
+      "demo": {
+        "title": "Game Demo Video",
+        "description": "Click to watch amazing gameplay"
+      }
+    },
+    "cta": {
+      "title": "Ready to start your Delta Force journey?",
+      "description": "Join us now and fight on the Delta battlefield with professional companions",
+      "findGamers": "Find Companions",
+      "register": "Register Now"
+    },
     "features": {
       "ai": {
-        "title": "AI-Powered",
-        "description": "Built-in AI integration with modern APIs, ready for your next intelligent application"
+        "title": "Professional Companions",
+        "description": "Strictly screened professional gaming companions providing high-quality gaming services"
       },
       "modern": {
-        "title": "Modern Stack",
-        "description": "Next.js 15, TypeScript, Tailwind CSS, and the latest web technologies"
+        "title": "Safe & Reliable",
+        "description": "Real-name verification and security guarantees for worry-free gaming enjoyment"
       },
       "i18n": {
-        "title": "Internationalization",
-        "description": "Full i18n support with next-intl, ready for global deployment"
+        "title": "24/7 Service",
+        "description": "Round-the-clock online service, meeting your companion needs anytime, anywhere"
       },
       "performance": {
-        "title": "Performance First",
-        "description": "Optimized for speed with server components, edge runtime, and smart caching"
+        "title": "Service Guarantee",
+        "description": "Full refund if not satisfied, ensuring worry-free gaming experience"
       }
     }
   },
   "layout": {
-    "title": "Next.js AI Starter",
+    "title": "Delta Gaming Platform",
     "menu": "Menu",
     "search": "Search",
     "home": "Home",
-    "features": "Features",
-    "docs": "Documentation",
-    "examples": "Examples",
+    "features": "Services",
+    "docs": "Help",
+    "examples": "Cases",
     "about": "About",
     "github": "GitHub"
   },
   "header": {
+    "brand": {
+      "name": "Delta Gaming",
+      "tagline": "Professional Gaming Platform"
+    },
     "navigation": {
       "home": "Home",
-      "features": "Features",
-      "docs": "Documentation",
-      "examples": "Examples",
-      "about": "About",
-      "github": "GitHub"
+      "findGamers": "Find Companions",
+      "orders": "My Orders",
+      "chat": "Chat",
+      "profile": "Profile"
     },
     "actions": {
       "search": "Search",
       "notifications": "Notifications",
       "profile": "Profile",
-      "settings": "Settings"
+      "settings": "Settings",
+      "login": "Login",
+      "register": "Register"
     }
   },
   "footer": {
     "project": {
-      "title": "Project",
-      "github": "GitHub Repository",
-      "documentation": "Documentation",
-      "examples": "Examples",
-      "changelog": "Changelog"
+      "title": "Gaming Services",
+      "github": "Delta Force Companion",
+      "documentation": "Honor of Kings Companion",
+      "examples": "League of Legends Companion",
+      "changelog": "Peace Elite Companion"
     },
     "community": {
-      "title": "Community",
-      "discussions": "Discussions",
-      "issues": "Issues",
-      "contributing": "Contributing",
-      "discord": "Discord"
+      "title": "Companions",
+      "discussions": "Online Companions",
+      "issues": "High-Rated Companions",
+      "contributing": "Female Companions",
+      "discord": "Verified Companions"
     },
     "resources": {
-      "title": "Resources",
-      "nextjs": "Next.js",
-      "tailwind": "Tailwind CSS",
-      "typescript": "TypeScript",
-      "vercel": "Deploy on Vercel"
+      "title": "Service Guarantee",
+      "nextjs": "Security Guarantee",
+      "tailwind": "Terms of Service",
+      "typescript": "Privacy Policy",
+      "vercel": "Refund Policy"
     },
     "legal": {
-      "title": "Legal",
-      "license": "MIT License",
-      "terms": "Terms of Use",
-      "privacy": "Privacy Policy",
-      "security": "Security"
+      "title": "Contact Us",
+      "license": "Customer Service",
+      "terms": "Feedback",
+      "privacy": "Business Cooperation",
+      "security": "Join Us"
     },
     "social": {
-      "title": "Follow Updates",
-      "twitter": "Twitter",
-      "github": "GitHub",
-      "linkedin": "LinkedIn",
-      "discord": "Discord"
+      "title": "Follow Us",
+      "twitter": "WeChat",
+      "github": "QQ",
+      "linkedin": "Weibo",
+      "discord": "TikTok"
     },
     "newsletter": {
       "title": "Stay Updated",
-      "description": "Get notified about new features and updates",
+      "description": "Get latest companion information and platform activity notifications",
       "placeholder": "Enter your email",
       "subscribe": "Subscribe"
     },
-    "copyright": "© 2024 Next.js AI Starter. Open source under MIT License.",
-    "poweredBy": "Built with Next.js & AI"
+    "copyright": "© 2024 Delta Gaming Platform. All rights reserved.",
+    "poweredBy": "Professional Gaming Service"
   },
   "localeSwitcher": {
-    "label": "English",
-    "locale": "{locale, select, en {English} zhCN {Chinese} other {Unknown}}"
+    "title": "Language Switch",
+    "description": "Choose your preferred language",
+    "label": "Select Language",
+    "chinese": "简体中文",
+    "english": "English",
+    "locale": "English"
   },
-  "offline": {
-    "title": "Next.js AI Starter",
-    "description": "Modern web development starter kit",
-    "tips": "Check your internet connection"
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "Sorry, the page you visited does not exist.",
+    "backHome": "Back to Home"
+  },
+  "error": {
+    "title": "An Error Occurred",
+    "description": "Sorry, an unexpected error occurred.",
+    "tryAgain": "Try Again"
   }
 }

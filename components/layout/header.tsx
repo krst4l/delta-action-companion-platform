@@ -1,7 +1,8 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Menu, X, Search, Bell, User, Gamepad2, Users, Crown, MessageCircle, Wallet } from 'lucide-react';
+import { useTranslations } from 'next-intl';
+import { Menu, X, Search, Bell, User, Gamepad2, Users, Crown, MessageCircle } from 'lucide-react';
 import { Button } from '~/components/ui/button';
 import { ThemeToggle } from '~/components/themeToggle';
 import LocaleSwitcher from '~/components/langSelect/localeSwitcher';
@@ -10,6 +11,7 @@ import { usePathname, Link } from '~/lib/i18n/navigation';
 import { Badge } from '~/components/ui/badge';
 
 export default function Header() {
+  const t = useTranslations('header');
   const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -24,11 +26,11 @@ export default function Header() {
   }, []);
 
   const navigation = [
-    { name: '首页', href: '/' },
-    { name: '找陪玩师', href: '/gamers', icon: Users },
-    { name: '我的订单', href: '/orders', icon: Crown },
-    { name: '消息', href: '/messages', icon: MessageCircle },
-    { name: '钱包', href: '/wallet', icon: Wallet },
+    { name: t('navigation.home'), href: '/' },
+    { name: t('navigation.findGamers'), href: '/gamers', icon: Users },
+    { name: t('navigation.orders'), href: '/orders', icon: Crown },
+    { name: t('navigation.chat'), href: '/chat', icon: MessageCircle },
+    { name: t('navigation.profile'), href: '/profile', icon: User },
   ];
 
   return (
@@ -52,9 +54,9 @@ export default function Header() {
                   </div>
                   <div className="flex flex-col">
                     <span className="bg-gradient-to-r from-gray-900 via-blue-800 to-purple-800 bg-clip-text text-lg font-bold text-transparent dark:from-white dark:via-blue-200 dark:to-purple-200">
-                      三角洲陪玩
+                      {t('brand.name')}
                     </span>
-                    <span className="-mt-1 text-xs text-gray-500 dark:text-gray-400">专业游戏陪玩平台</span>
+                    <span className="-mt-1 text-xs text-gray-500 dark:text-gray-400">{t('brand.tagline')}</span>
                   </div>
                 </Link>
               </div>
@@ -115,33 +117,12 @@ export default function Header() {
                 {/* 登录/注册按钮 */}
                 <div className="hidden items-center space-x-2 md:flex">
                   <Button variant="ghost" size="sm" className="liquid-glass-button" asChild>
-                    <Link href="/auth/login">登录</Link>
+                    <Link href="/auth/login">{t('actions.login')}</Link>
                   </Button>
                   <Button size="sm" className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700" asChild>
-                    <Link href="/auth/register">注册</Link>
+                    <Link href="/auth/register">{t('actions.register')}</Link>
                   </Button>
                 </div>
-
-                {/* 用户菜单 (登录后显示) */}
-                {/* <DropdownMenu>
-                  <DropdownMenuTrigger asChild>
-                    <Button variant="ghost" className="liquid-glass-button">
-                      <User className="h-4 w-4" />
-                    </Button>
-                  </DropdownMenuTrigger>
-                  <DropdownMenuContent align="end" className="liquid-glass-dropdown mt-2 w-56">
-                    <DropdownMenuItem>
-                      <User className="mr-2 h-4 w-4" />
-                      个人资料
-                    </DropdownMenuItem>
-                    <DropdownMenuItem>
-                      <Settings className="mr-2 h-4 w-4" />
-                      账户设置
-                    </DropdownMenuItem>
-                    <DropdownMenuSeparator />
-                    <DropdownMenuItem className="text-red-600 dark:text-red-400">退出登录</DropdownMenuItem>
-                  </DropdownMenuContent>
-                </DropdownMenu> */}
 
                 {/* 移动端菜单按钮 */}
                 <Button variant="ghost" size="icon" className="liquid-glass-button md:hidden" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
@@ -188,13 +169,13 @@ export default function Header() {
                     className="flex items-center gap-3 rounded-2xl px-4 py-3 text-sm font-medium text-gray-700 transition-all duration-500 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400"
                     onClick={() => setIsMobileMenuOpen(false)}>
                     <User className="h-5 w-5" />
-                    登录
+                    {t('actions.login')}
                   </Link>
                   <Link
                     href="/auth/register"
                     className="flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-blue-500 to-purple-600 px-4 py-3 text-sm font-medium text-white transition-all duration-500"
                     onClick={() => setIsMobileMenuOpen(false)}>
-                    注册账户
+                    {t('actions.register')}
                   </Link>
                 </div>
               </div>

@@ -8,7 +8,7 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/admin/', '/api/', '/private/'],
     },
-    sitemap: 'https://nextjs-ai-starter.vadxq.com/sitemap.xml',
-    host: 'https://nextjs-ai-starter.vadxq.com',
+    sitemap: 'https://delta-gaming.vadxq.com/sitemap.xml',
+    host: 'https://delta-gaming.vadxq.com',
   };
 }
